@@ -1,0 +1,129 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fff5f5 0%, #fffaf0 50%, #f0fff4 100%);
+  min-height: 100vh;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  color: #6c757d;
+  font-weight: 500;
+  padding: 12px 20px;
+}
+
+.nav-tabs .nav-link.active {
+  color: #fd7e14;
+  background: none;
+  border-bottom: 3px solid #fd7e14;
+}
+
+.ingredient-item {
+  padding: 8px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.ingredient-item:last-child {
+  border-bottom: none;
+}
+
+.instruction-step {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border-left: 4px solid #fd7e14;
+}
+
+.nutrition-card {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.nutrition-card i {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tip-item {
+  background: #fff3cd;
+  border-left: 4px solid #ffc107;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+#recipeImage {
+  min-height: 400px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  #recipeImage {
+    min-height: 300px;
+  }
+
+  .display-4 {
+    font-size: 2.5rem;
+  }
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  border: none;
+  border-radius: 10px;
+  padding: 12px 30px;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #feb47b, #ff7e5f);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(254, 180, 123, 0.4);
+}
+
+.badge {
+  font-size: 0.8rem;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+#tryAnotherBtn {
+  background: linear-gradient(135deg, #ff6b35, #f7931e);
+  border: none;
+  border-radius: 12px;
+  padding: 16px 32px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#tryAnotherBtn:hover {
+  background: linear-gradient(135deg, #f7931e, #ff6b35);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
+}
+
+#tryAnotherBtn:active {
+  transform: translateY(-1px);
+}
